@@ -27,22 +27,21 @@
         </ul>
         
         <div class="main_div">
-			
 			<?php
-			/*geração da página com os dados do filme existe na BD*/
+			
 			include_once ("database/getfilmeByid.php");
 			$result = get_filmeByid (); 
 			$linha = pg_fetch_row($result,0);?>
 			<a href="https://www.imdb.com/title/tt0120735/?ref_=nv_sr_1">
-			<img  class="picture_2" src="./img/<?=$linha[7]?>" width="100%">
+			<img  class="imagem" src="./img/<?=$linha[7]?>" width="100%">
 			</a>
 
 			<div class="text_div">
 			<h2><?=$linha[1]?></h2>
 			<h3><?=$linha[2]?></h3>
-			<p><b>Realizador:</b> <?=$linha[4]?></p>
-			<p><b>Elenco:</b> <?=$linha[3]?></h4>
-			<p><b>Descrição:</b> <?=$linha[5]?></p>
+			<h4>Realizador: <?=$linha[4]?></h4>
+			<h4>Elenco: <?=$linha[3]?></h4>
+			<p>Descrição: <?=$linha[5]?></p>
 			</div>
 			
 			<div class="reviews">

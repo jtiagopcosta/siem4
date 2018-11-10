@@ -1,3 +1,43 @@
+/* página principal */
+
+.main_div {
+	
+	margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+	width:60%;
+	overflow: hidden;
+	height: 1%;
+	background-color: #404040;
+	min-width: 600px;
+	border-radius: 5px;
+	padding: 5px;
+} 
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+} 
+.imagem{
+	border-style: groove;
+	border-width: 2px;
+	border-color: #ffffff;
+	border-radius: 4px;
+ }
+ */
+ .nulo{}
+ 
 /* páginas secundárias */
 
 
@@ -18,33 +58,28 @@
 	background-color: #404040;
 	border-radius: 5px;
 	margin-bottom: 5px;
+	margin-top: 5px;
+	margin-left: 20%;
 	margin-right: auto;
-	width: 75%;
-	padding-left: 5px;
-	
+	width: 47.5%;
 } 
 
-.filters{	
+.sec_div{
+    margin-top: 5px;	
 	float: right;
-	width: 21%;
+	width: 12%;
+	margin-right: 20%;
+	height: 400px;
 	background-color: #737373;
 	border-radius: 5px;
 	overflow: hidden;
-	height: 1%;
-	padding: 0px 10px 10px 10px;
 }
 
-.movie_picture{
-	
+.imagem{
+	padding: 20px 40px 20px 20px;
 	width:20%;
 	height: auto;
 	float: left;
-	border-style: groove;
-	border-width: 2px;
-	border-color: #ffffff;
-	border-radius: 4px;
-	margin: 20px 20px 20px 20px;
-	
 }
 .icon{
 	width:5%;
@@ -64,55 +99,13 @@
 }
 
 a.b:link {
-	margin-right: 5px;
-	margin-top: 5px;
-	float: right;
-    color: red;
+    color: white;
     background-color: transparent;
 }
 
 a.b:visited {
-    color: red;
+    color: blue;
     background-color: transparent;
 }
 
-h3 {
-	margin-left: 5px;
-}
 
-
-
-.sectextarea {
-	padding-left: 160px;
-	height: 90px
-
-}
-
-.secbutton {
-	float: right;
-}
-
-.p {
-	padding:5px 10px;
-
-}
-
-div.menu
-{
-width: 300px;
-height: 500px;
-background-color: #333;
-float: left;
-}
-.menu ul li
-{
-margem-fundo: 20px;
-}
-
-p {
-	margin-left: 5px;
-}
-
-h4 {
-	margin-left: 5px;
-}

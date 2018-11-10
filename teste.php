@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 	<head>
 	    <link rel="stylesheet"  href="css/style.css" type="text/css"/>
@@ -15,12 +16,14 @@
 		session_start();
 		 			if($_SESSION['autenticado'] ){ ?>
 			
-			<ul class="barra">	
-				Olá <b> <?php echo $_SESSION['nome'];?> </b>, como estás?               
+			<ul>	
+			Olá <b> <?php echo $_SESSION['nome'];?> </b>, como estás?
+               
 			    <form method='post' action='acaoLogout.php'>
 				<input class="submitlogin" type='submit' name='logout' value='logout'></input>
 				</form>
-			</ul>	
+			</ul>
+			
 
 				<?php }
 				else {
@@ -33,6 +36,9 @@
 				<li class="login"><input type="Login" name="nome" placeholder="Username" class="firstbar"></li>	
 				</form>
 				<?php } ?>
+
+			
+		</ul>
 	</div>	
 
 		<div id="div_top">
