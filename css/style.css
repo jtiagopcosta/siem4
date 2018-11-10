@@ -1,3 +1,4 @@
+
 body {
     background-color: #c7c7c7;
 	font-family: "Trebuchet MS";
@@ -33,6 +34,10 @@ h1 {
 	border-radius: 5px;
 	margin-top: 5px;
 }	
+.barrapesquisa {
+	float:right;
+	padding: 10px;
+}
 
  	ul {
     list-style-type: none;
@@ -47,6 +52,9 @@ h1 {
     top: 0;
 	min-width: 600px;
 	border-radius: 5px;
+	border-style: groove;
+	border-width: 2px;
+	border-color: #ffffff;
 	
 }
 

@@ -14,12 +14,10 @@
 	<!--LOGIN-->
 	<div>
 		<ul class="barra">
-			<a class="registro">Registrar-se</a>
-		<form method="POST" action="database/validacao_user.php">
+			<a href="paginaregistro.html" class="registro">Registrar-se</a>
 			<input class="submitlogin" type="submit" value="Sign in" />
 			<li class="login"><input type="Password" name="pesquisa" placeholder="Password" class="firstbar"></li>
-			<li class="login"><input type="Login" name="pesquisa" placeholder="Username" class="firstbar"></li>
-		</form>				
+			<li class="login"><input type="Login" name="pesquisa" placeholder="Username" class="firstbar"></li>				
 		</ul>
     </div>
 		
@@ -32,28 +30,31 @@
 		<li><a href="index.php">Em destaque</a></li>
 		<li><a href="filmes.php">Filmes</a></li>
 		<li><a href="sobre.html">Sobre</a></li>
-		<li><a href="formulario.html">Inserir</a></li>
+		<li><a class="active"  href="formulario.html">Inserir</a></li>
 		<li  class="barrapesquisa">
 			<input type="search" name="pesquisa" placeholder="pesquisa" class="input p">
 		</li>
 	</ul>
 	
 	<div class="div_moderador">
-		<h2 class="subh2">Registro</h2>  	
+		<h2 class="subh2">Registro</h2>
 	
         				
-	<form method="POST" action="database/acao.php">
+	<form method="POST">
 		
-		<input type="text" name="nome" class="input" placeholder="Nome Completo" maxlength="30" >
-		<input type="text" name="username" class="input"  placeholder="Nome de usuário" maxlength="30">
-		<input type="text" name="email" class="input"  placeholder="E-mail" maxlength="32">
-		<input type="Password" name="senha" class="input"  placeholder="Senha" maxlength="32">
-		<input type="submit" class="submit" name="submit" value="cadastrar" > 
+			<input type="text" name="nome" class="input" placeholder="Nome Completo" maxlength="30">
+			<input type="email" name="email" class="input" placeholder="Usuário" maxlength="40">
+			<input type="text" name="idade" class="input"  placeholder="Idade" maxlength="2">
+			<input type="text" name="e_mail" class="input"  placeholder="E-mail" maxlength="15">
+			<input type="Password" name="senha" class="input"  placeholder="Senha" maxlength="32">
+			<input type="submit" class="submit" value="Confirmar" > 
 			
 	</form>	
 	</div>
 
-		
+	<?php
+
+?>	
 </body>
 
 </html>

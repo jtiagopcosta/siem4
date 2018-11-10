@@ -11,29 +11,15 @@
 
 <body>
 	<div >
-		<?php
-		session_start();
-		 			if($_SESSION['autenticado'] ){ ?>
-			
-			<ul class="barra">	
-				Olá <b> <?php echo $_SESSION['nome'];?> </b>, como estás?               
-			    <form method='post' action='acaoLogout.php'>
-				<input class="submitlogin" type='submit' name='logout' value='logout'></input>
-				</form>
-			</ul>	
-
-				<?php }
-				else {
-					 ?>
-				<ul class="barra">
-				<a href="registro.php" class="registro">Registar-se</a>
-				<form method="POST" action="database/validacao_user.php">
+			<ul class="barra">
+				<a href="paginaregistro.html" class="registro">Registrar-se</a>
 				<input class="submitlogin" type="submit" value="Sign in" />
-				<li class="login"><input type="Password" name="senha" placeholder="Password" class="firstbar"></li>
-				<li class="login"><input type="Login" name="nome" placeholder="Username" class="firstbar"></li>	
-				</form>
-				<?php } ?>
-	</div>	
+				<li class="login"><input type="Password" name="pesquisa" placeholder="Password" class="firstbar"></li>
+				<li class="login"><input type="Login" name="pesquisa" placeholder="Username" class="firstbar"></li>		
+				
+			</ul>
+		</div>	
+		
 
 		<div id="div_top">
 			<h1>Cin&eacutefilos.pt</h1>
@@ -48,7 +34,9 @@
 		<li><a href="sobre.html">Sobre</a></li>
 		<li><a href="formulario.html">Inserir</a></li>
 		<li  class="barrapesquisa">
-			<input type="search" name="pesquisa" placeholder="pesquisa" class="input p">
+			<form method="POST" action="filmespesquisados.php">
+				<input type="search" name="pesquisa"  placeholder="pesquisa" class="input p">
+			</form>
 		</li>
 	</ul>
 
@@ -98,6 +86,10 @@
 					
 				<?php $j++;  } ?>
 			</div>
+		</div>
+		<div class="main_div">
+			Utilizador:Admin<br>
+			Pass:Admin
 		</div>
 	</body>
 
